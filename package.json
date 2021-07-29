@@ -9,10 +9,14 @@
   "dependencies": {
     "@material/react-material-icon": "^0.15.0",
     "@material/react-text-field": "^0.15.0",
+    "google-maps-react": "^2.0.6",
     "prop-types": "^15.7.2",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
+    "react-lottie": "^1.2.3",
+    "react-redux": "^7.2.4",
     "react-slick": "^0.28.1",
+    "redux": "^4.1.0",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.0",
     "styled-reset": "^4.3.4"

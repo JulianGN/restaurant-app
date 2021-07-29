@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Text from '../Text';
 
 export const Restaurant = styled.div`
     display: flex;
@@ -41,8 +42,13 @@ export const Address = styled.address`
 `;
 
 export const RestaurantPhoto = styled.img`
+    display: ${props => (props.imageLoaded ? 'block' : 'none')}; // Fantástico 
     width: 100px;
     height: 100px;
     border-radius: .5rem;
     object-fit: cover;
+`;
+
+export const Content = styled(Text)`
+  margin-top: 5px;
 `;

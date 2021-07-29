@@ -5,7 +5,7 @@ import { Overlay, Dialog } from './styles';
 // children: indica que haverá conteúdo interno
 // open: boolean que diz se o modal está aberto
 // onClose: método que abre ou fecha
-const Modal = ({ children, open, onClose }) => {
+const Modal = ({ children, modalOpened, onClose }) => {
     
     //sintaxe padrão do useEffect:
     //useEffect(() => {},[])
@@ -20,7 +20,7 @@ const Modal = ({ children, open, onClose }) => {
     },[onClose]);
     // o useEffect permite executar efeitos nos componentes APÓS a sua renderização 
 
-    if(!open) return null; // se open for falso, não faz nada
+    if(!modalOpened) return null; // se open for falso, não faz nada
 
     // Fechar a modal
     function onOverlayClick(){
